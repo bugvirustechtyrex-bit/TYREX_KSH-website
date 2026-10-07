@@ -1,0 +1,18 @@
+{
+  "name": "TYREX_KSH TECH Store",
+  "description": "TYREX_KSH TECH digital services store",
+  "keywords": [
+    "node",
+    "static",
+    "website",
+    "whatsapp"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo TYREX_KSH TECH deployment complete"
+  }
+}
