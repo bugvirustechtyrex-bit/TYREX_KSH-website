@@ -1,0 +1,13 @@
+{
+  "name": "tyrex-ksh-tech-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TYREX_KSH TECH digital services store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
