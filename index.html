@@ -3,140 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#05050b">
-<meta name="description" content="TYREX_KSH TECH — Premium digital products, server panels and WhatsApp bot services.">
-<title>TYREX_KSH TECH — Premium Digital Store</title>
+<meta name="theme-color" content="#08090f">
+<meta name="description" content="TYREX_KSH TECH digital services store">
+<title>TYREX_KSH TECH | Digital Store</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="particles"></div>
-<div class="aurora a1"></div><div class="aurora a2"></div><div class="aurora a3"></div>
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
 
-<header class="nav">
+<header class="topbar">
   <a class="brand" href="#">
-    <span class="brand-logo">T</span>
-    <span><b>TYREX_KSH</b><small>TECH</small></span>
+    <span class="logo">T</span>
+    <span><strong>TYREX_KSH TECH</strong><small>Digital Services Store</small></span>
   </a>
-  <nav>
-    <a href="#home">Home</a><a href="#products">Products</a><a href="#why">Why Us</a>
-  </nav>
-  <a class="nav-order" href="#products">ORDER NOW</a>
+  <a class="nav-button" href="#products">Products</a>
 </header>
 
-<main id="home">
+<main>
 <section class="hero">
-  <div class="live"><i></i> ONLINE • ORDERS OPEN</div>
-  <div class="marquee-wrap">
-    <div class="marquee">
-      <span>WELCOME TO TYREX_KSH TECH</span><b>✦</b><span>ORDER PRODUCTS</span><b>✦</b>
-      <span>WELCOME TO TYREX_KSH TECH</span><b>✦</b><span>ORDER PRODUCTS</span><b>✦</b>
-    </div>
+  <div class="status"><span></span> ONLINE • ORDERS OPEN</div>
+
+  <div class="typing-stage" aria-label="Welcome to TYREX_KSH TECH - Order Products">
+    <div id="typingText"></div><span class="cursor"></span>
   </div>
-  <div class="hero-copy">
-    <p class="eyebrow">THE NEXT LEVEL DIGITAL STORE</p>
-    <h1>POWER YOUR <span>DIGITAL WORLD</span></h1>
-    <p class="lead">Premium panels, server solutions, powerful scripts and TYREX_KSH MD — built for people who want more.</p>
-    <div class="hero-actions">
-      <a class="primary" href="#products">EXPLORE PRODUCTS <span>↗</span></a>
-      <a class="secondary" href="https://wa.me/255610744352?text=Hello%20TYREX_KSH%20TECH%20%F0%9F%91%8B%20I%20need%20help%20choosing%20a%20product." target="_blank">CHAT ON WHATSAPP</a>
-    </div>
+
+  <p class="hero-subtitle">
+    Premium digital products, server panels, scripts and WhatsApp bot solutions.
+  </p>
+
+  <div class="hero-buttons">
+    <a class="primary-btn" href="#products">VIEW PRODUCTS ↓</a>
+    <a class="secondary-btn" href="https://wa.me/255610744352?text=Hello%20TYREX_KSH%20TECH%20%F0%9F%91%8B%20I%20need%20help%20choosing%20a%20product." target="_blank">WHATSAPP SUPPORT</a>
   </div>
-  <div class="scroll">SCROLL TO DISCOVER <span>↓</span></div>
+
+  <div class="hero-line"></div>
 </section>
 
-<section class="ticker"><div><span>⚡ FAST RESPONSE</span><span>✦ DIGITAL PRODUCTS</span><span>⚡ WHATSAPP SUPPORT</span><span>✦ PREMIUM SERVICE</span><span>⚡ FAST RESPONSE</span><span>✦ DIGITAL PRODUCTS</span></div></section>
-
-<section id="products" class="section">
-  <div class="section-head">
-    <div><p class="eyebrow">01 / SHOP</p><h2>Choose Your <span>Product</span></h2></div>
-    <p>Tap any product to send an order directly to WhatsApp.</p>
+<section id="products" class="products-section">
+  <div class="section-title">
+    <div>
+      <span>OUR PRODUCTS</span>
+      <h2>Choose what you need.</h2>
+    </div>
+    <p>Select a product and WhatsApp will open with the order message already prepared.</p>
   </div>
-  <div class="products">
 
-    <article class="product featured">
-      <div class="shine"></div><div class="product-top"><div class="product-icon">🛡️</div><span>BEST SELLER</span></div>
-      <h3>Admin Panel</h3><p>Professional control panel for managing your digital services.</p>
+  <div class="product-grid">
+    <article class="card">
+      <div class="card-icon purple">🛡️</div>
+      <div class="label">POPULAR</div>
+      <h3>Admin Panel</h3>
+      <p>Professional admin panel for managing your digital services.</p>
       <div class="price">TSh 8,000 <small>8K</small></div>
-      <button onclick="order('Admin Panel','TSh 8,000')">ORDER NOW <b>→</b></button>
+      <button onclick="order('Admin Panel','TSh 8,000')">ORDER VIA WHATSAPP <b>→</b></button>
     </article>
 
-    <article class="product">
-      <div class="product-top"><div class="product-icon">🖥️</div><span>UNLIMITED</span></div>
-      <h3>Panel Server 3</h3><p>Unlimited panel server package — Level 3.</p>
+    <article class="card">
+      <div class="card-icon blue">🖥️</div>
+      <div class="label">UNLIMITED</div>
+      <h3>Panel Server 3</h3>
+      <p>Unlimited panel server package — Level 3.</p>
       <div class="price">TSh 7,000 <small>7K</small></div>
-      <button onclick="order('Unlimited Panel Server 3','TSh 7,000')">ORDER NOW <b>→</b></button>
+      <button onclick="order('Unlimited Panel Server 3','TSh 7,000')">ORDER VIA WHATSAPP <b>→</b></button>
     </article>
 
-    <article class="product">
-      <div class="product-top"><div class="product-icon">⚙️</div><span>UNLIMITED</span></div>
-      <h3>Panel Server 2</h3><p>Unlimited panel server package — Level 2.</p>
+    <article class="card">
+      <div class="card-icon cyan">⚙️</div>
+      <div class="label">UNLIMITED</div>
+      <h3>Panel Server 2</h3>
+      <p>Unlimited panel server package — Level 2.</p>
       <div class="price">TSh 5,000 <small>5K</small></div>
-      <button onclick="order('Unlimited Panel Server 2','TSh 5,000')">ORDER NOW <b>→</b></button>
+      <button onclick="order('Unlimited Panel Server 2','TSh 5,000')">ORDER VIA WHATSAPP <b>→</b></button>
     </article>
 
-    <article class="product">
-      <div class="product-top"><div class="product-icon">🚀</div><span>UNLIMITED</span></div>
-      <h3>Panel Server 1</h3><p>Unlimited panel server package — Level 1.</p>
+    <article class="card">
+      <div class="card-icon orange">🚀</div>
+      <div class="label">UNLIMITED</div>
+      <h3>Panel Server 1</h3>
+      <p>Unlimited panel server package — Level 1.</p>
       <div class="price">TSh 3,000 <small>3K</small></div>
-      <button onclick="order('Unlimited Panel Server 1','TSh 3,000')">ORDER NOW <b>→</b></button>
+      <button onclick="order('Unlimited Panel Server 1','TSh 3,000')">ORDER VIA WHATSAPP <b>→</b></button>
     </article>
 
-    <article class="product">
-      <div class="product-top"><div class="product-icon">🤖</div><span class="cyan">STRONG</span></div>
-      <h3>Script Bugbots</h3><p>Strong bot script package for automation projects.</p>
+    <article class="card">
+      <div class="card-icon pink">🤖</div>
+      <div class="label">STRONG</div>
+      <h3>Script Bugbots</h3>
+      <p>Strong bot script package for automation projects.</p>
       <div class="price">TSh 5,000 <small>5K</small></div>
-      <button onclick="order('Script Bugbots','TSh 5,000')">ORDER NOW <b>→</b></button>
+      <button onclick="order('Script Bugbots','TSh 5,000')">ORDER VIA WHATSAPP <b>→</b></button>
     </article>
 
-    <article class="product special">
-      <div class="product-top"><div class="product-icon">🧬</div><span>FULL COMMAND</span></div>
-      <h3>TYREX_KSH MD</h3><p>TYREX_KSH MD WhatsApp Bot — full command package.</p>
+    <article class="card">
+      <div class="card-icon green">🧬</div>
+      <div class="label">FULL COMMAND</div>
+      <h3>TYREX_KSH MD</h3>
+      <p>TYREX_KSH MD WhatsApp Bot — full command package.</p>
       <div class="price">TSh 3,000 <small>3K</small></div>
-      <button onclick="order('TYREX_KSH MD — Full Command','TSh 3,000')">ORDER NOW <b>→</b></button>
+      <button onclick="order('TYREX_KSH MD - Full Command','TSh 3,000')">ORDER VIA WHATSAPP <b>→</b></button>
     </article>
   </div>
 </section>
 
-<section id="why" class="section why">
-  <div class="section-head"><div><p class="eyebrow">02 / EXPERIENCE</p><h2>Built to Feel <span>Premium</span></h2></div></div>
-  <div class="features">
-    <div><strong>01</strong><h3>Simple Ordering</h3><p>Choose a product and your WhatsApp order message is prepared automatically.</p></div>
-    <div><strong>02</strong><h3>Mobile First</h3><p>Designed to look sharp and work smoothly on phones, tablets and computers.</p></div>
-    <div><strong>03</strong><h3>Direct Support</h3><p>Connect directly with TYREX_KSH TECH for product questions and orders.</p></div>
+<section class="steps">
+  <div class="section-title center">
+    <span>HOW TO ORDER</span>
+    <h2>Simple. Fast. Direct.</h2>
+  </div>
+  <div class="step-grid">
+    <div><strong>01</strong><h3>Choose</h3><p>Select the product you want.</p></div>
+    <div><strong>02</strong><h3>Order</h3><p>Click the WhatsApp order button.</p></div>
+    <div><strong>03</strong><h3>Confirm</h3><p>Continue directly with TYREX_KSH TECH.</p></div>
   </div>
 </section>
 
-<section class="contact">
-  <div class="contact-orb">✦</div>
-  <p class="eyebrow">03 / READY?</p>
-  <h2>YOUR NEXT MOVE<br>STARTS <span>HERE.</span></h2>
-  <p>Choose your product and let's get started.</p>
-  <a href="#products">START ORDERING →</a>
+<section class="contact-box">
+  <div>
+    <span>NEED HELP?</span>
+    <h2>Talk to TYREX_KSH TECH</h2>
+    <p>Questions, custom requests or product support.</p>
+  </div>
+  <a href="https://wa.me/255610744352?text=Hello%20TYREX_KSH%20TECH%20%F0%9F%91%8B%20I%20need%20support." target="_blank">OPEN WHATSAPP</a>
 </section>
 </main>
 
 <footer>
-  <div class="footer-brand"><span class="brand-logo">T</span><div><b>TYREX_KSH TECH</b><small>PREMIUM DIGITAL SERVICES</small></div></div>
-  <div class="footer-right"><a href="https://wa.me/255610744352" target="_blank">WhatsApp: +255 610 744 352</a><span>© 2026 TYREX_KSH TECH</span></div>
+  <strong>TYREX_KSH TECH</strong>
+  <span>WhatsApp: +255 610 744 352 • © 2026</span>
 </footer>
 
 <script>
+const lines = [
+  {text:"WELCOME", cls:"purple"},
+  {text:"TYREX_KSH TECH", cls:"pink"},
+  {text:"ORDER PRODUCTS", cls:"cyan"}
+];
+
+const target = document.getElementById("typingText");
+
+async function sleep(ms){ return new Promise(r => setTimeout(r,ms)); }
+
+async function typeLine(item){
+  target.className = item.cls;
+  target.textContent = "";
+  for(let i=0;i<item.text.length;i++){
+    target.textContent += item.text[i];
+    await sleep(95);
+  }
+  await sleep(950);
+  for(let i=item.text.length;i>0;i--){
+    target.textContent = item.text.slice(0,i-1);
+    await sleep(55);
+  }
+  await sleep(250);
+}
+
+async function animateTyping(){
+  while(true){
+    for(const item of lines) await typeLine(item);
+  }
+}
+animateTyping();
+
 function order(product, price){
- const msg=`Hello TYREX_KSH TECH 👋
+  const message =
+`Hello TYREX_KSH TECH 👋
 
 I want to order:
 🛒 Product: ${product}
 💰 Price: ${price}
 
 Please send me the payment/order details.`;
- window.open('https://wa.me/255610744352?text='+encodeURIComponent(msg),'_blank');
-}
-const p=document.getElementById('particles');
-for(let i=0;i<42;i++){
- const s=document.createElement('span'); s.className='particle';
- s.style.left=Math.random()*100+'%'; s.style.animationDelay=(Math.random()*8)+'s';
- s.style.animationDuration=(5+Math.random()*7)+'s'; s.style.opacity=.2+Math.random()*.6;
- p.appendChild(s);
+  window.open("https://wa.me/255610744352?text="+encodeURIComponent(message),"_blank");
 }
 </script>
 </body>
